@@ -10,7 +10,8 @@
 {{ macros.jumbo('Competitions'|trans, 'Official competitions organised by LMMS and its community members'|trans)}}
 <div class="container">
 	<!-- Preserve l10n content, please don't remove or comment out the h3 tag below -->
-	<h3>{% trans %}Current competitions:{% endtrans %}</h3>
+	<h3 class="hidden">{% trans %}Current competitions:{% endtrans %}</h3>
+	<h3>{% trans %}Past competitions:{% endtrans %}</h3>
 	<div class="competition">
 		<div class="comp-header" id="bol5" data-target="#bol5-desc">
 			<span>{% trans %}The Best of LMMS vol. V{% endtrans %}</span>
@@ -19,11 +20,20 @@
 		<div class="comp-desc panel-collapse collapse in" role="tabpanel" id="bol5-desc">
 			{% markdown %}
 			{% trans %}
+			#### The competition has ended on **April 16th, 2018**.
+			Support LMMS and buy the compilation over at our [bandcamp page.](https://lmmsartists.bandcamp.com/album/the-best-of-lmms-vol-5)
+
+			Listen to all entries [here.](https://goo.gl/PPEB6d)
+
+			Winners:
+			<iframe width="100%" height="350" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/519667455&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+			#### Original Description:
 			We are proud to present to you The Best of LMMS contest volume 5!
 			The contest aims to inspire the community to create and share their music. Submit your track at the link below before midnight
   		(23:59.59) on April 16th (UTC time) for a chance to be featured on the BoL v5 album. The compilation will be uploaded to Bandcamp, with all
 			profits going towards LMMS' further development.
-			
+
 			[Submit here](https://goo.gl/47ZXq1)
 			#### Competition rules:
 			1. **The Deadline:**
@@ -55,7 +65,6 @@
 			{% endmarkdown %}
 		</div>
 	</div>
-	<h3>{% trans %}Past competitions:{% endtrans %}</h3>
 	<div class="competition">
 		<div class="comp-header" id="bol4" data-target="#bol4-desc">
 			<span>{% trans %}The Best of LMMS vol. IV{% endtrans %}</span>
@@ -212,7 +221,6 @@
 		</div>
 	</div>
 </div>
-
 
 
 {% endspaceless %}
